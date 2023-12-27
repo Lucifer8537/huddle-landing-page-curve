@@ -1,0 +1,141 @@
+.footer-container {
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  display: grid;
+  padding: 7% 10% 5% 10%;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-container {
+  display: grid;
+  gap: 35px;
+  max-width: 350px;
+}
+.logo {
+  filter: brightness(0) invert(1);
+}
+.text-container {
+  font-family: "OpenSans";
+}
+.contact-container {
+  font-family: "OpenSans";
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  gap: 15px 15px;
+}
+.contact-icon {
+}
+.contact-value {
+}
+
+.news-letter-container {
+  display: grid;
+  height: fit-content;
+  gap: 30px;
+}
+.news-letter-title {
+  font-family: "Poppins-Medium";
+  font-size: 28px;
+}
+.news-letter-context {
+  font-family: "OpenSans";
+  max-width: 375px;
+}
+.news-letter-input-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.news-letter-input {
+  border: 1px solid transparent;
+  outline: none;
+  width: 330px;
+  padding: 10px 10px;
+  font-family: "OpenSans";
+  font-weight: 500;
+  border-radius: 5px;
+}
+.subscribe {
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: white;
+  font-family: "OpenSans";
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px 30px;
+}
+.err-msg {
+  color: hsl(0, 100%, 63%);
+  font-family: "OpenSans";
+  font-size: 12px;
+  margin-top: 5px;
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.icon {
+  font-size: 30px;
+}
+@media (min-width: 679px) {
+  .subscribe {
+    cursor: pointer;
+  }
+  .subscribe:hover {
+    background-color: hsl(321, 100%, 78%);
+  }
+  .icon {
+    cursor: pointer;
+  }
+  .icon:hover {
+    color: rgb(1, 198, 245);
+  }
+}
+@media (max-width: 678px) {
+  .footer-container {
+    padding: 20% 10% 13% 10%;
+  }
+  .footer-top {
+    display: grid;
+    gap: 80px;
+  }
+  .logo-container {
+    order: 2;
+    max-width: none;
+    width: 100%;
+    font-size: 80%;
+  }
+  .logo {
+    width: 60%;
+  }
+  .text-container {
+    line-height: 1.5em;
+  }
+  .footer-right {
+    order: 1;
+  }
+  .news-letter-context {
+    max-width: none;
+    width: 100%;
+    font-size: 85%;
+    line-height: 1.5em;
+  }
+  .news-letter-input-container {
+    display: grid;
+    gap: 15px;
+    justify-items: end;
+  }
+  .news-letter-input {
+    width: 90%;
+    padding: 3% 5%;
+  }
+  .subscribe {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,33 @@
+.header-container {
+  padding: 5% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-btn {
+  background: transparent;
+  border: 2px solid hsl(322, 100%, 66%);
+  color: hsl(322, 100%, 66%);
+  font-family: "Poppins-Medium";
+  font-size: 20px;
+  padding: 5px 25px;
+  border-radius: 25px;
+}
+@media (min-width: 679px) {
+  .header-btn {
+    cursor: pointer;
+  }
+  .header-btn:hover {
+    color: hsl(321, 100%, 78%);
+    border-color: hsl(321, 100%, 78%);
+  }
+}
+@media (max-width: 678px) {
+  .logo {
+    width: 30%;
+  }
+  .header-btn {
+    padding: 1% 5%;
+    font-size: 100%;
+  }
+}

@@ -1,0 +1,65 @@
+<div class="main-container">
+  <div class="main-title padding-5">{{ title }}</div>
+  <div class="main-context padding-5">{{ context }}</div>
+  <button class="main-btn">{{ btnLabel }}</button>
+  <img
+    src="../../assets/screen-mockups.svg"
+    alt="bg-section-top-desktop-1"
+    class="section-top-desktop padding-5"
+  />
+  <div class="promote-container">
+    <div *ngFor="let c of communityList" class="promote padding-5">
+      <img src="{{ c.icon }}" alt="" class="promote-icon" />
+      <div class="promote-number">{{ c.num }}</div>
+      <div class="promote-title">{{ c.value }}</div>
+    </div>
+  </div>
+  <div class="grow-together-container">
+    <div class="grow-together">
+      <div class="title">Grow Together</div>
+      <div class="context">
+        Generate meaningful discussions with your audience and build a strong,
+        loyal community. Think of the insightful conversations you miss out on
+        with a feedback form.
+      </div>
+    </div>
+    <img
+      src="../../assets/illustration-grow-together.svg"
+      alt="grow-together"
+      class="illustration"
+    />
+  </div>
+  <div class="flowing-container">
+    <img
+      src="../../assets/illustration-flowing-conversation.svg"
+      class="illustration"
+      alt="illustration-flowing-conversation"
+    />
+    <div class="flowing">
+      <div class="title">Flowing Conversations</div>
+      <div class="context">
+        You wouldn't paginate a conversation in real life, so why do it online?
+        Our threads have just-in-time loading for a more natural flow.
+      </div>
+    </div>
+  </div>
+  <div class="users-container">
+    <div class="users">
+      <div class="title">Your Users</div>
+      <div class="context">
+        It takes no time at all to integrate Huddle with your app's
+        authentication solution. This means, once signed in to your app, your
+        users can start chatting immediately.
+      </div>
+    </div>
+    <img
+      src="../../assets/illustration-your-users.svg"
+      alt="illustration-your-users"
+      class="illustration"
+    />
+  </div>
+  <div class="community-container padding-5">
+    <div class="community-title">Ready To Build Your Community?</div>
+    <button class="main-btn">{{ btnLabel }}</button>
+  </div>
+</div>
